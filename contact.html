@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Request Hajjanco technical service or spare-parts support.">
+  <title>Contact | Hajjanco</title>
+  <link rel="icon" href="public/assets/hajjanco-logo.jpeg">
+  <link rel="stylesheet" href="styles.css"><script src="script.js" defer></script>
+</head>
+<body data-page="contact">
+  <div data-site-header></div>
+  <main>
+    <section class="page-hero"><div class="container"><p class="eyebrow">Contact</p><h1>Start with the right technical conversation.</h1><p>Choose the enquiry type and share the available details. The form is structured to help Hajjanco understand the requirement from the beginning.</p></div></section>
+    <section class="section"><div class="container contact-layout">
+      <aside>
+        <p class="eyebrow">Get in touch</p><h2 style="margin:0 0 28px;color:var(--navy-900);font-size:2.5rem;line-height:1.05;letter-spacing:-.04em">Service and parts enquiries.</h2>
+        <div class="contact-card"><strong>Mostafa Hajjan</strong><span>General Manager</span><a class="text-link" href="tel:+966506827390">+966 50 682 7390</a></div>
+        <div class="contact-card"><strong>Hussam Abuzaid</strong><span>Operation Manager</span><a class="text-link" href="tel:+966581305177">+966 58 130 5177</a></div>
+        <div class="contact-card"><strong>Location</strong><span>Saudi Arabia</span></div>
+        <p class="form-note">Contact details are based on the supplied company profile and should be verified before publication.</p>
+      </aside>
+      <div>
+        <div class="form-tabs" role="tablist">
+          <button class="form-tab active" type="button" data-target="service-form">Request Service</button>
+          <button class="form-tab" type="button" data-target="parts-form">Request Spare Part</button>
+        </div>
+
+        <form class="form-panel active" id="service-form" data-pitch-form>
+          <div class="form-grid">
+            <div class="field"><label for="service-name">Name</label><input id="service-name" required placeholder="Your name"></div>
+            <div class="field"><label for="service-company">Company</label><input id="service-company" placeholder="Company name"></div>
+            <div class="field"><label for="service-phone">Phone</label><input id="service-phone" type="tel" required placeholder="+966"></div>
+            <div class="field"><label for="service-email">Email</label><input id="service-email" type="email" placeholder="name@company.com"></div>
+            <div class="field"><label for="service-type">Support required</label><select id="service-type"><option>Operation & Maintenance</option><option>Emergency Troubleshooting</option><option>Equipment Enquiry</option><option>Engineering & Documentation</option><option>Training</option></select></div>
+            <div class="field"><label for="service-equipment">Equipment / system</label><input id="service-equipment" placeholder="e.g. batching plant"></div>
+            <div class="field"><label for="service-location">Site location</label><input id="service-location" placeholder="City / project site"></div>
+            <div class="field"><label for="service-urgency">Urgency</label><select id="service-urgency"><option>Planned requirement</option><option>Support needed soon</option><option>Equipment stopped</option></select></div>
+            <div class="field full"><label for="service-message">Describe the requirement</label><textarea id="service-message" required placeholder="Tell us what is happening, what support is required and any available equipment details."></textarea></div>
+            <div class="field full"><label for="service-file">Photos or documents</label><input id="service-file" type="file" multiple accept="image/*,.pdf"></div>
+            <div class="field full"><button class="btn btn-primary" type="submit">Prepare Service Request →</button><p class="form-note">Pitch version only. No information is transmitted.</p><div class="form-status" aria-live="polite"></div></div>
+          </div>
+        </form>
+
+        <form class="form-panel" id="parts-form" data-pitch-form>
+          <div class="form-grid">
+            <div class="field"><label for="parts-name">Name</label><input id="parts-name" required placeholder="Your name"></div>
+            <div class="field"><label for="parts-company">Company</label><input id="parts-company" placeholder="Company name"></div>
+            <div class="field"><label for="parts-phone">Phone</label><input id="parts-phone" type="tel" required placeholder="+966"></div>
+            <div class="field"><label for="parts-email">Email</label><input id="parts-email" type="email" placeholder="name@company.com"></div>
+            <div class="field"><label for="parts-equipment">Equipment type</label><input id="parts-equipment" required placeholder="e.g. truck mixer"></div>
+            <div class="field"><label for="parts-brand">Brand / model</label><input id="parts-brand" placeholder="Manufacturer and model"></div>
+            <div class="field"><label for="parts-number">Part number</label><input id="parts-number" placeholder="If available"></div>
+            <div class="field"><label for="parts-quantity">Quantity</label><input id="parts-quantity" type="number" min="1" value="1"></div>
+            <div class="field full"><label for="parts-message">Part description</label><textarea id="parts-message" required placeholder="Describe the part, where it is used and the current equipment condition."></textarea></div>
+            <div class="field full"><label for="parts-file">Part, nameplate or drawing images</label><input id="parts-file" type="file" multiple accept="image/*,.pdf"></div>
+            <div class="field full"><button class="btn btn-primary" type="submit">Prepare Spare-Part Request →</button><p class="form-note">Pitch version only. No information is transmitted.</p><div class="form-status" aria-live="polite"></div></div>
+          </div>
+        </form>
+      </div>
+    </div></section>
+  </main>
+  <div data-site-footer></div>
+</body>
+</html>
